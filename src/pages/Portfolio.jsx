@@ -1,7 +1,7 @@
 import Hero from '../components/Hero';
 import PortfolioIntro from '../components/PortfolioIntro';
 import './Portfolio.css';
-import CTA from '../components/CTA';
+import CTA_Portfolio from '../components/CTA_Portfolio';
 
 const Portfolio = () => {
   const portfolioHeroData = {
@@ -26,7 +26,7 @@ const Portfolio = () => {
       {/* You can add portfolio items here */}
       {/* <ArchitectsSection/> */}
       {/* <FAQ/> */}
-      <CTA/>
+      <CTA_Portfolio/>
     </div>
   );
 };

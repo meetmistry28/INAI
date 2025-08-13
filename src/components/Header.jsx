@@ -71,10 +71,10 @@ const Header = () => {
     { to: '/services/model-training', label: 'Model Training' },
   ];
   const portfolioLinks = [
-    { to: '/portfoilo/inai-life', label: 'INAI_VERSE' },
-    { to: '/portfoilo/influwket', label: 'INFLUWKET' },
-    { to: '/portfoilo/veedket', label: 'VEEDKET' },
-    { to: '/portfoilo/offiket', label: 'OFFIKET' },
+    { to: '/portfolio/inai-life', label: 'INAI_VERSE' },
+    { to: '/portfolio/influwket', label: 'INFLUWKET' },
+    { to: '/portfolio/veedket', label: 'VEEDKET' },
+    { to: '/portfolio/offiket', label: 'OFFIKET' },
   ];
 
   return (

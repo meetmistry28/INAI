@@ -14,7 +14,7 @@ const projectDetails = [
     title: 'Veedket',
     desc: 'AI-powered video editing and publishing platform.',
     author: 'INAI Worlds',
-    link: '/portfoilo/Veedket',
+    link: '/portfolio/Veedket',
   },
   {
     name: 'OFFIKET',
@@ -22,7 +22,7 @@ const projectDetails = [
     title: 'Offiket',
     desc: 'AI-based real estate solutions for smart transactions.',
     author: 'INAI Worlds',
-    link: '/portfoilo/Offiket',
+    link: '/portfolio/Offiket',
   },
   {
     name: 'INFLUWKET',
@@ -30,7 +30,7 @@ const projectDetails = [
     title: 'Influwket',
     desc: 'Influencer marketing and campaign analytics tool.',
     author: 'INAI Worlds',
-    link: '/portfoilo/Influwket',
+    link: '/portfolio/Influwket',
   },
   {
     name: 'INAI LIFVERSE',
@@ -38,7 +38,7 @@ const projectDetails = [
     title: 'Inai Verse',
     desc: 'India’s First AI Virtual Model',
     author: 'INAI Worlds',
-    link: '/portfoilo/Inai-life',
+    link: '/portfolio/Inai-life',
   },
 ];
 

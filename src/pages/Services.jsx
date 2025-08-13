@@ -84,7 +84,7 @@ const Services = () => {
                 🔹 Data Manipulation
               </h2><br />
               <p className="mission-content text-white leading-relaxed mb-4 pt-5">
-                We want to develop the world's first ever super intelligent model which can give answers in every aspect. We also want to create a future where artificial intelligence empowers humanity, fosters innovation and drives sustainability progress across every aspect of life.
+                Before training, it is cleaning, shaping and refining. Our dedicated team transforms raw data into meaningful, machine-related datasets with technique, pipelines and good practices.
               </p><br />
               <a href="/services/data-manipulation" className="btn-get-in-touch">Read More</a>
             </div>

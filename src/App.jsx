@@ -57,10 +57,10 @@ function App() {
             <Route path="/services/web-scraping" element={<WebScrapping />} />
             <Route path="/services/data-manipulation" element={<Data_manipulation />} />
             <Route path="/services/model-training" element={<Model_training />} />
-            <Route path="/portfoilo/inai-life" element={<Inai_life />} />  
-            <Route path="/portfoilo/influwket" element={<Influwket />} />
-            <Route path="/portfoilo/veedket" element={<Veedket />} />
-            <Route path="/portfoilo/offiket" element={<Offiket />} />
+            <Route path="/portfolio/inai-life" element={<Inai_life />} />  
+            <Route path="/portfolio/influwket" element={<Influwket />} />
+            <Route path="/portfolio/veedket" element={<Veedket />} />
+            <Route path="/portfolio/offiket" element={<Offiket />} />
             <Route path="/blog/what-is-artificial-intelligence" element={<What_is_AI />} />
             <Route path="/blog/what-is-machine-learning" element={<What_is_ML />} />
             <Route path="/blog/what-is-web-scraping" element={<What_is_web_scraping />} />

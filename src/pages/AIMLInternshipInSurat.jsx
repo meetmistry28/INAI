@@ -88,7 +88,7 @@ const AIMLInternshipInSurat = () => {
                 <div className="inaiwbc1-container" style={{ marginTop: '2rem' }}>
                     <div className="features-content">
                         <h2 className="main-heading">
-                            Why AI/ML Internships Matter br Now More Than Ever
+                            Why AI/ML Internships Matter Now More Than Ever
                         </h2>
                         <div className="section-container">
                             <div className="analogy-container">
