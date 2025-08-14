@@ -100,7 +100,7 @@ const Blog12 = () => {
             <p>Surat is emerging as a strong tech and startup hub in Gujarat, and the AI momentum is catching up fast. But quality internships here are still rare.</p>
 
             <p>At <a href="https://inaiworlds.com/" style={{color: "skyblue"}}>INAI Worlds</a>, we offer a product-based AI/ML internship in Surat that goes beyond training:</p>
-          <p className='blog_pad'> • Interns work directly on live modules like <a href="https://www.inaiworlds.com/portfoilo/inai-life" style={{color: "skyblue"}}>virtual assistants</a>, <a href="https://www.inaiworlds.com/portfoilo/influwket" style={{color: "skyblue"}}>Influwket</a>, <a href="https://www.inaiworlds.com/portfoilo/offiket" style={{color: "skyblue"}}>Offiket</a>, and <a href="https://www.inaiworlds.com/portfoilo/veedket" style={{color: "skyblue"}}>Veedket</a>.</p>
+          <p className='blog_pad'> • Interns work directly on live modules like <a href="/portfolio/inai-life" style={{color: "skyblue"}}>virtual assistants</a>, <a href="/portfolio/influwket" style={{color: "skyblue"}}>Influwket</a>, <a href="/portfolio/offiket" style={{color: "skyblue"}}>Offiket</a>, and <a href="/portfolio/veedket" style={{color: "skyblue"}}>Veedket</a>.</p>
           <p className='blog_pad'> • Each intern is assigned a real problem, dataset, and team.
           </p>
           <p className='blog_pad'> • Code gets reviewed, models get tested.</p>

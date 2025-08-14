@@ -97,9 +97,9 @@ const Footer = () => {
           <p> All Rights Reserved © {new Date().getFullYear()} by INAI Worlds Pvt. Ltd.</p>
         </div>
         <div className="footer-legal-links">
-          <Link to="/Privacy_policy">Privacy Policy</Link>
+          <Link to="/privacy-policy">Privacy Policy</Link>
           <span className="divider">|</span>
-          <Link to="/Terms_and_conditions">Terms & Conditions</Link>
+          <Link to="/terms-conditions">Terms & Conditions</Link>
         </div>
       </div>
     </>

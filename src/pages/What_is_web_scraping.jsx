@@ -72,7 +72,7 @@ const Blog1 = () => {
           <p>Whether you’re tracking trends, building AI models, or generating leads, web scraping saves time. This guide will explain what web scraping is, how it works, and why it matters.</p>
 
           <h2 id="what-is-ai">What is Web Scraping?</h2>
-          <p>Web scraping is an automated way to extract data from websites, like prices, reviews, or news. It’s widely used for market research, lead generation, and content collection. While powerful for businesses, it must be used responsibly. Always check a website’s rules before scraping to avoid violating terms and ensure ethical data usage for smarter decision-making.If you want to know more about it, you can check out our <a href="/services/Web-scraping" style={{ color: 'skyblue', textDecorationLine: 'underline' }}>Web Scraping Services</a> page.</p>
+          <p>Web scraping is an automated way to extract data from websites, like prices, reviews, or news. It’s widely used for market research, lead generation, and content collection. While powerful for businesses, it must be used responsibly. Always check a website’s rules before scraping to avoid violating terms and ensure ethical data usage for smarter decision-making.If you want to know more about it, you can check out our <a href="/services/web-scraping" style={{ color: 'skyblue', textDecorationLine: 'underline' }}>Web Scraping Services</a> page.</p>
 
           <h2 id="how-ai-works">What Can You Scrape From the Web?</h2>
           <p>Web scraping allows you to collect various types of publicly available data from websites, depending on your goals. Commonly scraped data includes:</p>

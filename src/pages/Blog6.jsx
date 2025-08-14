@@ -99,10 +99,10 @@ const Blog6 = () => {
                     <h3>2. Deep Domain Expertise Across Industries</h3>
                     <p>What sets INAI Worlds apart as a top AI company is its ability to address specific industry needs through targeted, AI-powered solutions. Our innovation extends across multiple domains through the following key projects:</p>
                     <ul>
-                        <li>INAI: <a href="/portfoilo/inai-life" style={{ color: 'skyblue', textDecorationLine: 'underline' }}> India’s first AI model</a> designed to help individuals and businesses find smart, AI-driven solutions tailored to real-world needs—empowering innovation, accessibility, and impact across sectors</li>
-                        <li>INFLUWKET: An <a href="/portfoilo/influwket" style={{ color: 'skyblue', textDecorationLine: 'underline' }}> AI-driven social media and influencer marketing platform</a> designed to help creators and brands track trends, optimize campaigns, and influence the digital marketplace.</li>
-                        <li>VEEDKET: A <a href="/portfoilo/veedket" style={{ color: 'skyblue', textDecorationLine: 'underline' }}> creative  AI platform for educators and content creators </a>to turn concepts into powerful visual content and videos.</li>
-                        <li>OFFIKET: An <a href="/portfoilo/offiket" style={{ color: 'skyblue', textDecorationLine: 'underline' }}> AI-powered commercial real estate platform</a> enabling smart listings, pricing insights, and seamless transactions for buying, selling, or renting office spaces.</li>
+                        <li>INAI: <a href="/portfolio/inai-life" style={{ color: 'skyblue', textDecorationLine: 'underline' }}> India’s first AI model</a> designed to help individuals and businesses find smart, AI-driven solutions tailored to real-world needs—empowering innovation, accessibility, and impact across sectors</li>
+                        <li>INFLUWKET: An <a href="/portfolio/influwket" style={{ color: 'skyblue', textDecorationLine: 'underline' }}> AI-driven social media and influencer marketing platform</a> designed to help creators and brands track trends, optimize campaigns, and influence the digital marketplace.</li>
+                        <li>VEEDKET: A <a href="/portfolio/veedket" style={{ color: 'skyblue', textDecorationLine: 'underline' }}> creative  AI platform for educators and content creators </a>to turn concepts into powerful visual content and videos.</li>
+                        <li>OFFIKET: An <a href="/portfolio/offiket" style={{ color: 'skyblue', textDecorationLine: 'underline' }}> AI-powered commercial real estate platform</a> enabling smart listings, pricing insights, and seamless transactions for buying, selling, or renting office spaces.</li>
                     </ul>
                     <p>This expertise ensures they deliver solutions that are not only innovative but also industry-specific, making them a top AI company in India.</p>
 

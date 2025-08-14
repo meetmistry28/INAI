@@ -73,7 +73,7 @@ const Services = () => {
               <p className="vision-content text-white leading-relaxed mb-4">
                 From scraping web data to real-time feeds, our web scraping solutions feed both model training and internal learning. It’s all about data, accuracy data.
               </p><br />
-              <a href="/services/Web-scraping" className="btn-get-in-touch">Read More</a>
+              <a href="/services/web-scraping" className="btn-get-in-touch">Read More</a>
 
             </div>
           </div>

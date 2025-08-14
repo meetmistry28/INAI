@@ -64,7 +64,7 @@ function App() {
             <Route path="/blog/what-is-artificial-intelligence" element={<What_is_AI />} />
             <Route path="/blog/what-is-machine-learning" element={<What_is_ML />} />
             <Route path="/blog/what-is-web-scraping" element={<What_is_web_scraping />} />
-            <Route path="/blog/ai-ml-real-life" element={<Real_life_AI_ML_use />} />
+            <Route path="/blog/ai-ml-use-in-real-life-change-the-world" element={<Real_life_AI_ML_use />} />
             <Route path="/blog/how-ai-ml-internship-change-career" element={<Blog5 />} />
             <Route path="/blog/inai-worlds-top-ai-company" element={<Blog6 />} />
             <Route path="/blog/ai-ml-internship-benefits-product-based-ai-company" element={<Blog7 />} />
@@ -73,8 +73,8 @@ function App() {
             <Route path="/blog/top-python-libraries-web-scraping" element={<Blog10 />} />
             <Route path="/blog/data-manipulation-powers-ai-model-training" element={<Blog11 />} />
             <Route path="/blog/ai-ml-internship-matter-more-than-certification" element={<Blog12 />} />
-            <Route path="/Terms_and_conditions" element={<Terms_and_conditions />} />
-            <Route path="/Privacy_policy" element={<Privacy_policy />} />
+            <Route path="/terms-conditions" element={<Terms_and_conditions />} />
+            <Route path="/privacy-policy" element={<Privacy_policy />} />
             <Route path="/best-ai-company-india" element={<INAIWorldsBestAICompany1 />} />
             <Route path="/best-ai-company-gujarat" element={<INAIWorldsBestAICompany2 />} />
             <Route path="/best-ai-company-surat" element={<INAIWorldsBestAICompany3 />} /> 

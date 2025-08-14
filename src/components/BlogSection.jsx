@@ -3,15 +3,15 @@ import { Link } from 'react-router-dom';
 import blogImg1 from '../assets/blog1.jpg';
 import blogImg2 from '../assets/blog2.jpg';
 import blogImg3 from '../assets/blog3.jpg';
-import blogImg4 from '../assets/Blog4.jpg';
-import blogImg5 from '../assets/Blog5.jpg';
-import blogImg6 from '../assets/Blog6.jpg';
-import blogImg7 from '../assets/Blog7.jpg';
-import blogImg8 from '../assets/Blog8.jpg';
-import blogImg9 from '../assets/Blog9.jpg';
-import blogImg10 from '../assets/Blog10.jpg';
-import blogImg11 from '../assets/Blog11.jpg';
-import blogImg12 from '../assets/Blog12.jpg';
+import blogImg4 from '../assets/blog4.jpg';
+import blogImg5 from '../assets/blog5.jpg';
+import blogImg6 from '../assets/blog6.jpg';
+import blogImg7 from '../assets/blog7.jpg';
+import blogImg8 from '../assets/blog8.jpg';
+import blogImg9 from '../assets/blog9.jpg';
+import blogImg10 from '../assets/blog10.jpg';
+import blogImg11 from '../assets/blog11.jpg';
+import blogImg12 from '../assets/blog12.jpg';
 
 import './BlogSection.css';
 // Placeholder image
@@ -40,7 +40,7 @@ const blogs = [
     title: 'AI/ML USE IN REAL LIFE : CHANGE THE WORLD',
     // desc: 'A behind-the-scenes look at our AI/ML internship program and how we train the next generation of innovators.',
     img: blogImg4,
-    link: '/blog/ai-ml-real-life',
+    link: '/blog/ai-ml-use-in-real-life-change-the-world',
   },
   {
     title: 'How an AI/ML Internship Can Change Your Career',

@@ -194,7 +194,7 @@ const Blog11 = () => {
 
           <h2>How INAI Worlds Uses Data Manipulation in Real AI Model Training</h2>
 
-          <p>At <a href="https://inaiworlds.com/" style={{color: "skyblue"}}>INAI Worlds</a>, data manipulation is more than just a preparatory step—it’s a core part of how we build powerful, real-world AI systems. Whether we’re training models for <a href="https://www.inaiworlds.com/portfoilo/inai-life" style={{color: "skyblue"}}>virtual assistants</a>, <a href="https://www.inaiworlds.com/portfoilo/Veedket" style={{color: "skyblue"}}>smart video platforms</a>, or <a href="https://www.inaiworlds.com/portfoilo/offiket" style={{color: "skyblue"}}>AI-based real estate </a> solutions , we ensure every dataset is thoroughly cleaned, structured, and optimized before model training begins.</p>
+          <p>At <a href="https://inaiworlds.com/" style={{color: "skyblue"}}>INAI Worlds</a>, data manipulation is more than just a preparatory step—it’s a core part of how we build powerful, real-world AI systems. Whether we’re training models for <a href="/portfolio/inai-life" style={{color: "skyblue"}}>virtual assistants</a>, <a href="/portfolio/Veedket" style={{color: "skyblue"}}>smart video platforms</a>, or <a href="/portfolio/offiket" style={{color: "skyblue"}}>AI-based real estate </a> solutions , we ensure every dataset is thoroughly cleaned, structured, and optimized before model training begins.</p>
 
           <p>Each project involves real-time data preprocessing, feature engineering, and transformation pipelines—giving our teams deep exposure to how proper data manipulation impacts AI performance.</p>
 
