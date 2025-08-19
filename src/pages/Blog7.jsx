@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Blog.css';
 import image1 from '../assets/blog7.jpg';
+import { Helmet } from 'react-helmet-async';
 
 const faqs = [
   {
@@ -33,44 +34,53 @@ const AccordionItem = ({ item, isOpen, onClick }) => (
 );
 
 const Blog7 = () => {
+
   const [openFaq, setOpenFaq] = useState(null);
   const handleFaqClick = (idx) => setOpenFaq(openFaq === idx ? null : idx);
 
   return (
-    <div className="blog-layout">
-      {/* Sidebar / Table of Contents */}
-      <aside className="blog-sidebar">
-        <h3 className="sidebar-title">Table of Contents</h3>
-        <ul className="sidebar-list">
-          <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#what-is-ai">Skill Development and Practical Experience</a></li>
-          <li><a href="#how-ai-works">Career Advancement and Job Opportunities</a></li>
-          <li><a href="#benefits">Personal Growth and Confidence Building</a></li>
-          <li><a href="#terms">Choose INAI Worlds for Your AI/ML Internship</a></li>
-          <li><a href="#conclusion">Conclusion</a></li>
-        </ul>
-      </aside>
+    <>
+      <Helmet >
+        <title>Benefits of AI/ML Internships at Product-Based AI Companies | INAI Worlds</title>
+        <meta
+          name="description"
+          content="Explore the key benefits of AI/ML internships at product-based AI companies, gaining hands-on experience, industry skills, and real-world project exposure."
+        />
+      </Helmet>
+      <div className="blog-layout">
+        {/* Sidebar / Table of Contents */}
+        <aside className="blog-sidebar">
+          <h3 className="sidebar-title">Table of Contents</h3>
+          <ul className="sidebar-list">
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#what-is-ai">Skill Development and Practical Experience</a></li>
+            <li><a href="#how-ai-works">Career Advancement and Job Opportunities</a></li>
+            <li><a href="#benefits">Personal Growth and Confidence Building</a></li>
+            <li><a href="#terms">Choose INAI Worlds for Your AI/ML Internship</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+          </ul>
+        </aside>
 
-      {/* Main Blog Content */}
-      <div className="blog-detail-page" style={{ marginBottom: '100px' }}>
-        <div className="blog-detail-header">
-          <h1 className="blog-detail-title">Exploring the Benefits of an AI/ML Internship at a Product-Based AI Company</h1>
-        </div>
-        <div className='blog-detail-image'>
-          <img src={image1} alt="" />
-        </div>
-        <div className="blog-detail-content">
-          <h2 id="introduction">Introduction</h2>
-          <p>An AI/ML internship is a short-term opportunity for students or early professionals to gain hands-on experience in Artificial Intelligence and Machine Learning. Interns work on real-world projects, applying their theoretical knowledge to solve practical problems using AI/ML techniques. Product-based AI companies create and sell AI-powered solutions, including tools in NLP, computer vision, and analytics. Interning with such companies offers exposure to cutting-edge technology. Internships are vital for career growth—they help bridge academic learning with industry needs, build networks, and enhance practical skills for a successful future in AI/ML.</p>
-          
+        {/* Main Blog Content */}
+        <div className="blog-detail-page" style={{ marginBottom: '100px' }}>
+          <div className="blog-detail-header">
+            <h1 className="blog-detail-title">Exploring the Benefits of an AI/ML Internship at a Product-Based AI Company</h1>
+          </div>
+          <div className='blog-detail-image'>
+            <img src={image1} alt="" />
+          </div>
+          <div className="blog-detail-content">
+            <h2 id="introduction">Introduction</h2>
+            <p>An AI/ML internship is a short-term opportunity for students or early professionals to gain hands-on experience in Artificial Intelligence and Machine Learning. Interns work on real-world projects, applying their theoretical knowledge to solve practical problems using AI/ML techniques. Product-based AI companies create and sell AI-powered solutions, including tools in NLP, computer vision, and analytics. Interning with such companies offers exposure to cutting-edge technology. Internships are vital for career growth—they help bridge academic learning with industry needs, build networks, and enhance practical skills for a successful future in AI/ML.</p>
 
-          <h2 id="what-is-ai">Skill Development and Practical Experience</h2>
+
+            <h2 id="what-is-ai">Skill Development and Practical Experience</h2>
 
             <h3>A. Hands On Learning </h3>
 
             <h4>1. Real World Projects</h4>
             <p>Interns work on projects that have a direct impact on the company’s products or services. This hands-on experience allows them to see how AI/ML concepts are applied in real scenarios and enhance their understanding and skills.</p>
-            Also Read : <a href="https://www.inaiworlds.com/portfolio " style={{color:'skyblue'}}>https://www.inaiworlds.com/portfolio </a>
+            Also Read : <a href="https://www.inaiworlds.com/portfolio " style={{ color: 'skyblue' }}>https://www.inaiworlds.com/portfolio </a>
 
             <h4>2. Industry Tools and Technologies</h4>
             <p>Internships give access to the latest tools and technologies used in the industry. Interns learn to work with popular programming languages like Python and frameworks like TensorFlow and PyTorch which are essential for AI/ML development.</p>
@@ -149,53 +159,54 @@ const Blog7 = () => {
             <h4>3. Entrepreneurship and Startups</h4>
             <p>Internships can inspire entrepreneurial aspirations as interns may identify gaps in the market and develop their own solutions.</p>
 
-          <h2 id="how-ai-works">Personal Growth and Confidence Building</h2>
-          <h3>A. Overcoming Challenges and Adversity</h3>
-          <p>Interns often work on difficult projects that test their skills and help them grow in knowledge and confidence. These real-world tasks teach them how to solve problems and understand how AI/ML works in practice. Along the way, they receive useful feedback and learn from their mistakes. This helps them improve, become more adaptable, and build strong problem-solving skills—important for today’s fast-changing tech world.</p>
+            <h2 id="how-ai-works">Personal Growth and Confidence Building</h2>
+            <h3>A. Overcoming Challenges and Adversity</h3>
+            <p>Interns often work on difficult projects that test their skills and help them grow in knowledge and confidence. These real-world tasks teach them how to solve problems and understand how AI/ML works in practice. Along the way, they receive useful feedback and learn from their mistakes. This helps them improve, become more adaptable, and build strong problem-solving skills—important for today’s fast-changing tech world.</p>
 
-          <h3>B. Boosting Self-Confidence</h3>
-          <p>One major benefit of an AI/ML internship is the boost in self-confidence. Completing projects and meeting goals makes interns feel proud and capable. Positive feedback from mentors and teammates also builds motivation and belief in their own abilities. Many interns even get to present their work, helping them become better at communication and more confident in professional settings.</p>
+            <h3>B. Boosting Self-Confidence</h3>
+            <p>One major benefit of an AI/ML internship is the boost in self-confidence. Completing projects and meeting goals makes interns feel proud and capable. Positive feedback from mentors and teammates also builds motivation and belief in their own abilities. Many interns even get to present their work, helping them become better at communication and more confident in professional settings.</p>
 
-          <h3>C. Fostering a Growth Mindset </h3>
-          <p>Internships promote a growth mindset by encouraging continuous learning and curiosity. Interns explore new tools, take on new challenges, and develop creative thinking—qualities that are highly valued in the tech world.</p>
-          
-          <h2 id="benefits">Choose INAI Worlds for Your AI/ML Internship</h2>
-          
-          <p>If you’re looking to kickstart your AI/ML career with a real-world, product-focused experience, consider applying for an internship at INAI Worlds Pvt. Ltd. one of India’s most forward-thinking and rapidly growing AI companies.</p>
+            <h3>C. Fostering a Growth Mindset </h3>
+            <p>Internships promote a growth mindset by encouraging continuous learning and curiosity. Interns explore new tools, take on new challenges, and develop creative thinking—qualities that are highly valued in the tech world.</p>
 
-        <p><a href="https://www.inaiworlds.com/" style={{color: "skyblue"}}>INAI Worlds</a> stands out as a product-focused Best AI company in Surat, developing cutting-edge in-house solutions tailored for key sectors like media, real estate, education, and healthcare—driving innovation with purpose and scalability.</p>
+            <h2 id="benefits">Choose INAI Worlds for Your AI/ML Internship</h2>
 
-        <p>Our AI modules are designed using advanced technologies such as NLP, generative AI, and predictive analytics giving interns exposure to the future of intelligent systems. You can explore our <a href="/best-ai-ml-internship-surat" style={{color: "skyblue"}}>AI/ML internship in Surat</a> page for detailed information. </p>
+            <p>If you’re looking to kickstart your AI/ML career with a real-world, product-focused experience, consider applying for an internship at INAI Worlds Pvt. Ltd. one of India’s most forward-thinking and rapidly growing AI companies.</p>
 
-          <h2 id="conclusion">Conclusion</h2>
-          <p>AI/ML internships offer opportunities for students and early professionals aiming to build a career in one of today’s fastest-growing tech domains.</p>
+            <p><a href="https://www.inaiworlds.com/" style={{ color: "skyblue" }}>INAI Worlds</a> stands out as a product-focused Best AI company in Surat, developing cutting-edge in-house solutions tailored for key sectors like media, real estate, education, and healthcare—driving innovation with purpose and scalability.</p>
+
+            <p>Our AI modules are designed using advanced technologies such as NLP, generative AI, and predictive analytics giving interns exposure to the future of intelligent systems. You can explore our <a href="/best-ai-ml-internship-surat" style={{ color: "skyblue" }}>AI/ML internship in Surat</a> page for detailed information. </p>
+
+            <h2 id="conclusion">Conclusion</h2>
+            <p>AI/ML internships offer opportunities for students and early professionals aiming to build a career in one of today’s fastest-growing tech domains.</p>
 
             <p>These internships offer hands-on experience, exposure to real-world projects, and access to industry tools and mentors.</p>
-        <p>Especially in product-based AI companies, interns gain practical skills, industry insights, and valuable networks.</p>
-        <p>Beyond technical growth, such opportunities enhance confidence, problem-solving, and career clarity—opening pathways to diverse roles and full-time positions. It’s a transformative step toward a future-ready, innovation-driven career in AI and machine learning.</p>
+            <p>Especially in product-based AI companies, interns gain practical skills, industry insights, and valuable networks.</p>
+            <p>Beyond technical growth, such opportunities enhance confidence, problem-solving, and career clarity—opening pathways to diverse roles and full-time positions. It’s a transformative step toward a future-ready, innovation-driven career in AI and machine learning.</p>
 
 
 
+          </div>
+
+          <section className="section-block faq-block" style={{ marginTop: 40 }}>
+            <h2 style={{ color: 'white' }}>Frequently Asked Questions</h2>
+            {faqs.map((item, idx) => (
+              <AccordionItem
+                key={idx}
+                item={item}
+                isOpen={openFaq === idx}
+                onClick={() => handleFaqClick(idx)}
+              />
+            ))}
+          </section>
+
+          <div style={{ marginTop: 32, textAlign: 'center' }}>
+            <a href="/blog" className="blog-back-btn">← Back to Blog</a>
+          </div>
+          <div style={{ height: 40 }} />
         </div>
-
-        <section className="section-block faq-block" style={{ marginTop: 40 }}>
-          <h2 style={{ color: 'white' }}>Frequently Asked Questions</h2>
-          {faqs.map((item, idx) => (
-            <AccordionItem
-              key={idx}
-              item={item}
-              isOpen={openFaq === idx}
-              onClick={() => handleFaqClick(idx)}
-            />
-          ))}
-        </section>
-
-        <div style={{ marginTop: 32, textAlign: 'center' }}>
-          <a href="/blog" className="blog-back-btn">← Back to Blog</a>
-        </div>
-        <div style={{ height: 40 }} />
       </div>
-    </div>
+    </>
   );
 };
 

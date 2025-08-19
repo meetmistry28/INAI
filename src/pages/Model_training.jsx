@@ -4,7 +4,7 @@ import serviceImg from '../assets/AI_Model_Training_The_Power_Core_of_Modern AI
 import './Model_training.css';
 import './Web_scraping.css';
 import './Data_manipulation.css';
-
+import { Helmet } from 'react-helmet-async';
 import UpcomingProjectsSection1 from '../components/UpcomingProjectsSection1';
 import FAQ_Ser3 from './FAQ_Ser3';
 
@@ -134,7 +134,13 @@ const Service3 = () => {
 
   return (
     <>
-
+      <Helmet>
+        <title>AI Model Training for Generative AI and ML | INAI Worlds</title>
+        <meta
+          name="description"
+          content="AI model training at INAI Worlds focuses on generative AI and ML, building smarter, more powerful models to fuel real-world applications and innovations."
+        />
+      </Helmet>
       <div className="service-detail-page model-training-page">
         {/* Hero Section */}
         <div className="flex flex-col md:flex-row items-center gap-8 sec_com">
@@ -312,7 +318,7 @@ const Service3 = () => {
 
         {/* </div> */}
         <div className="features-cards why-web">
-          <h2>Before you train your model, mastering data manipulation techniques using Pandas and NumPy is essential for real-world AI performance.</h2>
+          <h2>Before you train your model, learning <a href="/services/web-scraping" style={{ color: "skyblue" }}>web scraping</a> for data collection and mastering <a href="/services/data-manipulation" style={{ color: "skyblue" }}> data manipulation</a> techniques with Pandas and NumPy is essential for real-world AI performance.</h2>
         </div>
 
         {/* Why Choose INAI */}

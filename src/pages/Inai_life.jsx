@@ -1,6 +1,5 @@
 import React from 'react';
 import './Inai_life.css';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -9,9 +8,47 @@ import 'swiper/css/pagination';
 import img1 from "../assets/portfolio/inai_post.jpg";
 // import img2 from "../../assets/portfolio/INAI_WORLD.jpg";
 
+import { useEffect } from 'react';
+
 function Inai_life() {
+  useEffect(() => {
+    // Set document title
+    document.title = "INAI | India's First AI Virtual Model | INAI Worlds";
+    
+    // Set meta description
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (!metaDescription) {
+      metaDescription = document.createElement('meta');
+      metaDescription.name = 'description';
+      document.head.appendChild(metaDescription);
+    }
+    metaDescription.content = "Meet India's First AI Virtual Model INAI, innovating the future with cutting-edge AI technology, showcased exclusively by INAI Worlds. Experience innovation today!";
+    
+    // Set Open Graph tags
+    const ogTags = {
+      'og:title': "INAI | India's First AI Virtual Model | INAI Worlds",
+      'og:description': "Meet India's First AI Virtual Model INAI, innovating the future with cutting-edge AI technology, showcased exclusively by INAI Worlds. Experience innovation today!",
+      'og:type': 'website',
+      'og:url': window.location.href,
+      'twitter:card': 'summary_large_image',
+      'twitter:title': "INAI | India's First AI Virtual Model | INAI Worlds",
+      'twitter:description': "Meet India's First AI Virtual Model INAI, innovating the future with cutting-edge AI technology, showcased exclusively by INAI Worlds. Experience innovation today!"
+    };
+    
+    Object.entries(ogTags).forEach(([property, content]) => {
+      let tag = document.querySelector(`meta[property="${property}"]`);
+      if (!tag) {
+        tag = document.createElement('meta');
+        tag.setAttribute('property', property);
+        document.head.appendChild(tag);
+      }
+      tag.content = content;
+    });
+  }, []);
+  
   return (
     <>
+      {/* Meta tags are now set via JavaScript */}
       <section className="project-detail-section">
         {/* <h1 className="page-title">INAI LIFE</h1> */}
         <div className="project-grid">
@@ -56,9 +93,9 @@ function Inai_life() {
 
             <div className="project-description">
               <h3>What is INAI?</h3>
-          </div>
-              <span className='project-description_span'>INAI is India's own AI system where everyone can find their solutions. We are work on future tech like MLP and Gen-AI. We build developers and work with them. we just want to develop India's first AI company like Open AI and Deep Seek. so join with us and take part of this journey.</span>
             </div>
+            <span className='project-description_span'>INAI is India's own AI system where everyone can find their solutions. We are work on future tech like MLP and Gen-AI. We build developers and work with them. we just want to develop India's first AI company like Open AI and Deep Seek. so join with us and take part of this journey.</span>
+          </div>
         </div>
       </section>
     </>

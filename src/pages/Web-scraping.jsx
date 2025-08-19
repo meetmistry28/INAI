@@ -6,6 +6,7 @@ import '../components/CTA3.css';
 import webscraping from "../assets/3D/webscraping.png";
 import FAQ_Service from '../components/FAQ_Service';
 import CTA_WEB from '../components/CTA_WEB';
+import { Helmet } from 'react-helmet-async';
 
 // Data arrays for stepper (keep as before)
 const stepper = [
@@ -92,6 +93,13 @@ const Service1 = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Web Scraping in Python for AI Model Building | INAI Worlds</title>
+        <meta
+          name="description"
+          content="INAI Worlds uses web scraping in python to build AI modules and offers hands-on AI/ML internship for real-world learning and development."
+        />
+      </Helmet>
       <div className="service-detail-page webscraping-page">
         <div>
           <div className="flex flex-col md:flex-row items-center gap-8 sec_com">

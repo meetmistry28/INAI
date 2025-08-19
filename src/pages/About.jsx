@@ -1,6 +1,7 @@
 import Hero from '../components/Hero';
 import CTA2 from '../components/CTA2';
 import CompanyVMVCarousel from '../components/CompanyVMVCarousel';
+import { Helmet } from 'react-helmet-async';
 
 const About = () => {
   const aboutHeroData = {
@@ -15,6 +16,13 @@ const About = () => {
 
   return (
     <>
+      <Helmet>
+        <title>About INAI Worlds | Leading Product-Based AI Company</title>
+        <meta
+          name="description"
+          content="About INAI Worlds – A leading AI company providing cutting-edge AI solutions and innovations to empower industries and shape the future of AI technology."
+        />
+      </Helmet>
       <div className="w-full overflow-x-hidden bg-[#0A0C18] text-white">
         <Hero
           tagline={aboutHeroData.tagline}

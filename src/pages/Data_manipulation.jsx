@@ -4,6 +4,7 @@ import serviceImg from '../assets/Data_Manipulation_in_AI_Model_Building_&_AI-ML
 import './Data_manipulation.css';
 import './Services.css';
 import './Web_scraping.css';
+import { Helmet } from 'react-helmet-async';
 
 
 const Service2 = () => {
@@ -177,6 +178,13 @@ const Service2 = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Data Manipulation in AI model building | INAI Worlds</title>
+        <meta
+          name="description"
+          content="INAI Worlds uses data manipulation to prepare AI modules and teaches these essential skills in hands-on AI/ML internships for real-world experience."
+        />
+      </Helmet>
 
       <div className="service-detail-page datamanipulation-page">
 
@@ -292,7 +300,7 @@ const Service2 = () => {
           </div>
         </div>
         <div className="features-cards why-web">
-          <h2> <a href="/services/web-scraping" style={{ color: "skyblue" }}>Web scraping</a> and preprocessing are vital for better <a href="/services/data-manipulation" style={{ color: "skyblue" }}> AI model training</a>, feeding your algorithms with high-quality structured data for higher performance.</h2>
+          <h2> <a href="/services/web-scraping" style={{ color: "skyblue" }}>Web scraping</a> and preprocessing are vital for better <a href="/services/model-training" style={{ color: "skyblue" }}> AI model training</a>, feeding your algorithms with high-quality structured data for higher performance.</h2>
         </div>
 
         {/* Why Learn Section */}

@@ -1,9 +1,21 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { resolve } from 'path'
+import { createHtmlPlugin } from 'vite-plugin-html'
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    createHtmlPlugin({
+      minify: true,
+      inject: {
+        data: {
+          title: 'INAI Worlds',
+          description: 'India\'s First AI Virtual Model',
+        },
+      },
+    }),
+  ],
   base: '/',
   build: {
     outDir: 'dist',
@@ -13,7 +25,9 @@ export default defineConfig({
       }
     },
     minify: 'terser',
-    sourcemap: true
+    sourcemap: true,
+    chunkSizeWarningLimit: 1000,
+    emptyOutDir: true
   },
   server: {
     historyApiFallback: true,

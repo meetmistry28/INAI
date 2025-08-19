@@ -17,6 +17,7 @@ import WhatIsInaiSection from '../../pages/WhatIsInaiSection.jsx';
 import Marquee from './Marquee.jsx';
 import OurSeamless from './OurSeamless.jsx';
 import BlogSectionHome from '../BlogSectionHome.jsx';
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
   const homeHeroData = {
@@ -29,26 +30,35 @@ const Home = () => {
   };
 
   return (
-    <div className="home">
-      <Hero
-        tagline={homeHeroData.tagline}
-        title={<>Best AI Company Delivering<span className="highlight-text-home">Future-Ready AI Solutions & Career</span></>}
-        subtitle={homeHeroData.subtitle}
-        buttons={homeHeroData.buttons}
-      />
-      <UpcomingProjectsSection />
-      <CoreFeatures />
-      <RealWorldTraining />
-      <CoreElements />
-      <Marquee />
-      {/* <WhatIsInaiSection /> */}
-      <ResultsStatsSection />
-      <OurSeamless />
-      {/* <Reviews /> */}
-      {/* <ArchitectsSection /> */}
-      <FAQ />
-      <BlogSectionHome />
-    </div>
+    <>
+      <Helmet>
+        <title>Best AI Company in India | INAI Worlds - Let’s Build Next Gen</title>
+        <meta
+          name="description"
+          content="INAI Worlds, leading the best AI company in India, offers innovative AI products and smart solutions to power business growth. Let’s build the next generation."
+        />
+      </Helmet>
+      <div className="home">
+        <Hero
+          tagline={homeHeroData.tagline}
+          title={<>Best AI Company Delivering<span className="highlight-text-home">Future-Ready AI Solutions & Career</span></>}
+          subtitle={homeHeroData.subtitle}
+          buttons={homeHeroData.buttons}
+        />
+        <UpcomingProjectsSection />
+        <CoreFeatures />
+        <RealWorldTraining />
+        <CoreElements />
+        <Marquee />
+        {/* <WhatIsInaiSection /> */}
+        <ResultsStatsSection />
+        <OurSeamless />
+        {/* <Reviews /> */}
+        {/* <ArchitectsSection /> */}
+        <FAQ />
+        <BlogSectionHome />
+      </div>
+    </>
   );
 };
 
