@@ -9,6 +9,7 @@
   box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for better separation */
 }
 
+
 /* Ensure the footer has a solid background */
 .footer-container-main::before {
   content: '';
