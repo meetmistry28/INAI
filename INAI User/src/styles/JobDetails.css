@@ -1,0 +1,884 @@
+/* Modern Job Details Page Styling */
+.job-details-page {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #e2e8f0;
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.job-content {
+  margin-bottom: 4rem;
+  background: rgb(15, 23, 42);
+  border-radius: 12px;
+  padding: 2.5rem;
+  /* border: 1px solid rgba(216, 31, 123, 0.3); */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(138, 99, 242, 0.1);
+  color: #8a63f2;
+  border: 1px solid rgba(138, 99, 242, 0.3);
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.back-button:hover {
+  background: rgba(138, 99, 242, 0.2);
+}
+
+.back-button::before {
+  content: '←';
+  margin-right: 8px;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.job-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 1.5rem;
+}
+
+.job-description {
+  margin-top: 2rem;
+}
+
+.job-description h1 {
+  font-size: 2rem;
+  margin: 0 0 1.5rem;
+  color: #1a1a1a;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.job-overview {
+  font-size: 1.05rem;
+  color: #ffffff;
+  margin-bottom: 2.5rem;
+  line-height: 1.8;
+}
+
+.job-section {
+  margin-bottom: 2.5rem;
+  padding: 2rem;
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 10px;
+  /* border: 1px solid rgba(124, 58, 237, 0.15); */
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.job-section h2 {
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin: 0 0 1.5rem;
+  position: relative;
+  padding-right: 2rem;
+  padding-bottom: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-section h2::after {
+  content: '+';
+  font-size: 1.8rem;
+  font-weight: 300;
+  transition: transform 0.3s ease;
+  margin-left: 1rem;
+  color: #8b5cf6;
+}
+
+.job-section.active h2::after {
+  transform: rotate(45deg);
+  color: #c084fc;
+}
+
+
+.job-section:hover h2::after {
+  width: 70px;
+}
+
+.job-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.job-section li {
+  position: relative;
+  padding-left: 1.8rem;
+  margin-bottom: 0.8rem;
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.7;
+  transition: all 0.2s ease;
+}
+
+.job-section li:hover {
+  color: #ffffff;
+}
+
+.job-section li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #8b5cf6;
+  font-size: 1.6em;
+  line-height: 1;
+  transition: all 0.2s ease;
+}
+
+.job-section li:hover::before {
+  color: #c084fc;
+}
+
+/* Application Form Section */
+.application-form-section {
+  background: rgba(15, 23, 42, 0.7);
+  padding: 3rem 2.5rem;
+  border-radius: 12px;
+  margin-top: 3rem;
+  border: 1px solid rgba(124, 58, 237, 0.3);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.application-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.application-form-section h2 {
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Application Form */
+.application-form {
+  background: rgb(30, 41, 59);
+  border-radius: 10px;
+  padding: 2.5rem;
+  border: 1px solid rgba(124, 58, 237, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  overflow: visible;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.form-section h3 {
+  font-size: 1.2rem;
+  color: #1a1a1a;
+  margin: 0 0 1.5rem;
+  font-weight: 600;
+}
+
+/* Aadhaar Verification Styles */
+.aadhaar-verification {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.aadhaar-verification input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #4b5563;
+  border-radius: 6px;
+  background: #1e293b;
+  color: #e2e8f0;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.aadhaar-verification input:focus {
+  border-color: #8a63f2;
+  box-shadow: 0 0 0 2px rgba(138, 99, 242, 0.2);
+  outline: none;
+}
+
+.aadhaar-verification input.verified {
+  border-color: #10b981;
+  background-color: rgba(16, 185, 129, 0.1);
+}
+
+.verify-button {
+  padding: 0 1.25rem;
+  background: #8a63f2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.verify-button:hover:not(:disabled) {
+  background: #7c4dff;
+}
+
+.verify-button:disabled {
+  background: #4b5563;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.verification-success,
+.verification-error {
+  margin-top: 8px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.verification-success {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  border-left: 3px solid #10b981;
+}
+
+.verification-error {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  border-left: 3px solid #ef4444;
+}
+
+.verification-icon {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.aadhaar-consent {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: rgba(138, 99, 242, 0.1);
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+.aadhaar-consent p {
+  margin: 0;
+}
+
+/* Form Sections */
+.form-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: rgba(30, 41, 59, 0.5);
+  border-radius: 8px;
+  border: 1px solid rgba(124, 58, 237, 0.1);
+}
+
+.form-section h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #e2e8f0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(124, 58, 237, 0.2);
+}
+
+/* Radio Group */
+.radio-group {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-weight: 400;
+  color: #e2e8f0;
+}
+
+.radio-group input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #8a63f2;
+  cursor: pointer;
+}
+
+/* Form Layout */
+.form-row {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.form-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+  margin-top: 1rem;
+}
+
+.form-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #4b5563;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea {
+  width: 100%;
+  padding: 0.85rem 1.2rem;
+  background: rgba(70, 70, 70, 0.5);
+  border: 1px solid rgb(63, 46, 90);
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.form-group input[type="text"]::placeholder,
+.form-group input[type="email"]::placeholder,
+.form-group input[type="tel"]::placeholder,
+.form-group textarea::placeholder {
+  color: #64748b;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.3);
+  background: rgba(15, 23, 42, 0.9);
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.file-upload {
+  border: 2px dashed #334155;
+  border-radius: 8px;
+  padding: 1.75rem 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: rgba(15, 23, 42, 0.5);
+}
+
+.file-upload:hover {
+  border-color: #8b5cf6;
+  background: rgba(30, 41, 59, 0.7);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.file-upload input[type="file"] {
+  display: none;
+}
+
+.file-upload-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.file-upload-label span:first-child {
+  color: #4f46e5;
+  font-weight: 500;
+}
+
+.file-upload-hint {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.submit-button {
+  background: linear-gradient(135deg, #8a63f2 0%, #6d28d9 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 20px rgba(106, 58, 237, 0.4);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.submit-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #9f7aea 0%, #7c3aed 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.submit-button:hover::before {
+  opacity: 1;
+}
+
+.submit-button:hover {
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
+  background: linear-gradient(135deg, #9f7aea 0%, #8b5cf6 100%);
+}
+
+.form-note {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #94a3b8;
+  line-height: 1.6;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.9;
+}
+
+.form-section {
+  margin-bottom: 2.5rem;
+  background: rgba(30, 32, 45, 0.2);
+  border-radius: 10px;
+  padding: 1.8rem;
+  border: 1px solid rgba(138, 99, 242, 0.15);
+  transition: all 0.3s ease;
+}
+
+.form-section:hover {
+  background: rgba(30, 32, 45, 0.3);
+  border-color: rgba(138, 99, 242, 0.3);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.form-section h3 {
+  color: #fff;
+  font-size: 1.1rem;
+  margin: 0 0 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form-section h3::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 18px;
+  background: linear-gradient(180deg, #8a63f2, #c38fff);
+  border-radius: 3px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  position: relative;
+}
+
+.form-row .form-group {
+  margin-bottom: 0;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.form-group input:focus + label,
+.form-group.filled label {
+  color: #8a63f2;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  border: 1px solid rgba(138, 99, 242, 0.2);
+  border-radius: 8px;
+  background: rgba(20, 22, 37, 0.8);
+  color: #fff;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #8a63f2;
+  box-shadow: 0 0 0 2px rgba(138, 99, 242, 0.2);
+  outline: none;
+  background: rgba(30, 32, 45, 0.8);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #8a63f2;
+  box-shadow: 0 0 0 2px rgba(138, 99, 242, 0.2);
+}
+
+/* Radio Button Styles */
+.radio-group {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-weight: 400;
+  color: #c9d1d9;
+  transition: color 0.2s ease;
+}
+
+.radio-label input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #8a63f2;
+  border-radius: 50%;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.radio-label input[type="radio"]:checked {
+  background-color: #8a63f2;
+  box-shadow: inset 0 0 0 3px #0f111a;
+}
+
+.radio-label:hover {
+  color: #fff;
+}
+
+/* File Upload Styles */
+.file-upload {
+  position: relative;
+  margin-top: 1.5rem;
+}
+
+.file-upload-container {
+  border: 2px dashed rgba(138, 99, 242, 0.3);
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  background: rgba(20, 22, 37, 0.5);
+}
+
+.file-upload:hover .file-upload-container {
+  border-color: #8a63f2;
+  background: rgba(30, 32, 45, 0.5);
+}
+
+.file-upload input[type="file"] {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.file-upload-icon {
+  font-size: 2rem;
+  color: #8a63f2;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.file-upload-text {
+  font-size: 0.9rem;
+  color: #c9d1d9;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.file-upload-hint {
+  font-size: 0.8rem;
+  color: #8a8f9c;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.file-name {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #8a63f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: rgba(138, 99, 242, 0.1);
+  padding: 0.5rem;
+  border-radius: 6px;
+  word-break: break-all;
+}
+
+.file-name::before {
+  content: '✓';
+  color: #4caf50;
+  font-weight: bold;
+}
+
+/* Select Dropdown Styles */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238a63f2' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem center;
+  background-size: 16px 12px;
+  padding-right: 2.5rem;
+  cursor: pointer;
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-actions {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(138, 99, 242, 0.1);
+}
+
+.submit-button {
+  background: linear-gradient(90deg, #8a63f2, #c38fff);
+  color: white;
+  border: none;
+  padding: 1.1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.submit-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: 0.5s;
+}
+
+.submit-button:hover {
+  box-shadow: 0 5px 20px rgba(138, 99, 242, 0.4);
+}
+
+.submit-button:hover::before {
+  left: 100%;
+}
+
+.submit-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(138, 99, 242, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .form-section {
+    padding: 1rem;
+  }
+  
+  .radio-group {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .aadhaar-verification {
+    flex-direction: column;
+  }
+  
+  .verify-button {
+    padding: 0.5rem 1rem;
+  }
+  .form-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-column {
+    width: 100%;
+  }
+  
+  .form-group.full-width {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .job-details-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "form description"
+      "form .";
+  }
+  
+  .application-form-container {
+    grid-area: form;
+    position: sticky;
+    top: 2rem;
+    align-self: start;
+  }
+  
+  .job-description {
+    grid-area: description;
+    position: sticky;
+    top: 2rem;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .job-details-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .application-form {
+    position: static;
+    margin-top: 2rem;
+    max-height: none;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .radio-group {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .job-details-page {
+    padding: 1.5rem 1rem 3rem;
+  }
+  
+  .job-description,
+  .application-form {
+    padding: 1.5rem;
+  }
+  
+  .job-description h1 {
+    font-size: 1.8rem;
+  }
+  
+  .job-section h2 {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,104 @@
+/* Simple, smooth panel demo */
+:root {
+  --bg: #0b1625;
+  --card: #121c2b;
+  --text: #e5f0ff;
+  --muted: #a8b3c7;
+  --btn-from: #39e5ff;
+  --btn-to: #3aa5ff;
+}
+
+.box-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  padding: 32px;
+}
+
+.box-card {
+  width: 560px;
+  max-width: 95vw;
+  background: var(--card);
+  color: var(--text);
+  border-radius: 14px;
+  padding: 28px 28px 24px;
+  box-shadow: 0 10px 35px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.06);
+}
+
+.box-title {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: .2px;
+  margin: 4px 0 10px;
+}
+
+.box-desc {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.65;
+  margin: 0 0 20px;
+}
+
+.box-button {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 14px 22px;
+  border-radius: 16px;
+  font-weight: 700;
+  border: none;
+  color: #051426;
+  background: linear-gradient(135deg, var(--btn-from), var(--btn-to));
+  box-shadow: 0 6px 18px rgba(58,165,255,.35);
+  cursor: pointer;
+}
+
+/* Panel modal */
+.box-overlay {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(2,10,22,.55);
+  backdrop-filter: blur(3px);
+  animation: fadeIn .28s ease-out both;
+  z-index: 1000;
+}
+
+.box-panel {
+  width: 520px;
+  max-width: 92vw;
+  background: #020a16;
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: 14px;
+  color: var(--text);
+  padding: 22px;
+  box-shadow: 0 18px 50px rgba(0,0,0,.5);
+  transform-origin: center;
+  animation: popIn .28s ease-out both;
+}
+
+.box-panel h3 {
+  margin: 2px 0 8px;
+}
+
+.box-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.box-action {
+  background: #0e1726;
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,.08);
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
+@keyframes popIn { from { opacity: 0; transform: translateY(8px) scale(.96) } to { opacity: 1; transform: translateY(0) scale(1) } }

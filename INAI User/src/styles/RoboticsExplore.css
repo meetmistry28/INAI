@@ -1,0 +1,880 @@
+.overview-section.robotics-explore {
+    min-height: 96vh;
+    background: #000000;
+    display: flex;
+    align-items: center;
+    padding: 6rem 0;
+    color: #ffffff;
+}
+
+.robotics-explore-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.robotics-explore-left {
+    max-width: 800px;
+}
+
+.robotics-explore-main-heading .highlight {
+    color: #4f46e5;
+    display: block;
+}
+
+/* .section-header .highlight {
+    color: #a084e8;
+    position: relative;
+    display: inline-block;
+} */
+/* 
+.section-header .highlight::after {
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.overview-section {
+    position: relative;
+    padding: 8rem 0;
+    background: #000000;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.overview-section .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.overview-container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    position: relative;
+}
+
+.overview-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.section-title .highlight {
+    color: #a084e8;
+    position: relative;
+}
+
+.overview-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.application-areas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.application-tag {
+    background: rgba(79, 70, 229, 0.1);
+    color: #ffffff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(79, 70, 229, 0.2);
+}
+
+.future-visual {
+    flex: 1;
+    position: relative;
+    height: 500px;
+    min-height: 400px;
+}
+
+.overview-3d-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    background: #000000;
+}
+
+.floating-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(79, 70, 229, 0.05);
+    backdrop-filter: blur(5px);
+}
+
+.shape-1 {
+    width: 100px;
+    height: 100px;
+    top: 10%;
+    left: 10%;
+}
+
+.shape-2 {
+    width: 150px;
+    height: 150px;
+    bottom: 10%;
+    right: 10%;
+}
+
+.shape-3 {
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    right: 15%;
+}
+
+.floating-cards {
+    position: absolute;
+    z-index: 2;
+}
+
+.floating-cards .card {
+    position: absolute;
+    background: #000000;
+    border-radius: 12px;
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.floating-cards .card-1 {
+    top: -20px;
+    left: -30px;
+    transform: rotate(-5deg);
+    background: rgba(0, 0, 0, 0.8);
+    color: #4f46e5;
+}
+
+.floating-cards .card-2 {
+    bottom: 30px;
+    right: -40px;
+    transform: rotate(5deg);
+    background: rgba(0, 0, 0, 0.9);
+    color: #10b981;
+}
+
+.floating-cards .card-3 {
+    bottom: -20px;
+    left: 20%;
+    transform: rotate(-3deg);
+    background: rgba(0, 0, 0, 0.95);
+    color: #f59e0b;
+}
+
+.why-robotics-section {
+    padding: 8rem 2rem;
+    background: #000000;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid rgba(160, 132, 232, 0.1);
+    border-bottom: 1px solid rgba(160, 132, 232, 0.1);
+}
+
+.tech-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(90deg, rgba(160, 132, 232, 0.03) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(160, 132, 232, 0.03) 1px, transparent 1px);
+    background-size: 30px 30px;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.floating-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.floating-shapes .shape {
+    position: absolute;
+    background: linear-gradient(45deg, #1d14af63, #8b5cf64a);
+    border-radius: 50%;
+    filter: blur(20px);
+    opacity: 0.15;
+}
+
+.shape-1 {
+    width: 200px;
+    height: 200px;
+    background: #4f46e5;
+    top: 20%;
+    left: 20%;
+}
+
+.shape-2 {
+    width: 300px;
+    height: 300px;
+    background: #8b5cf6;
+    bottom: 10%;
+    right: 15%;
+}
+
+.shape-3 {
+    width: 150px;
+    height: 150px;
+    background: #ec4899;
+    top: 60%;
+    left: 10%;
+}
+
+.why-robotics-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.why-robotics-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.section-subtitle {
+    display: inline-block;
+    color: #8a6eff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.section-title {
+    font-size: 3rem;
+    margin: 0.5rem 0 1.5rem;
+    background: linear-gradient(90deg, #333333, #333333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    display: inline-block;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #565656, #565656);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.why-robotics-text {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    margin: 0 auto 4rem;
+    color: #ffffff;
+    max-width: 700px;
+    position: relative;
+    background: rgba(0, 0, 0, 0);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid rgba(160, 132, 232, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.robotics-benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 4rem 0;
+}
+
+.benefit-card {
+    background: #000000;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+    z-index: 1;
+}
+
+.benefit-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.03) 0%, transparent 70%);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    border-color: #d1d5db;
+}
+
+.benefit-card:hover::before {
+    opacity: 1;
+}
+
+.benefit-icon {
+    width: 6rem;
+    height: 60px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.benefit-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #565656;
+    position: relative;
+    display: inline-block;
+}
+
+.icon-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #f9fafb;
+    opacity: 1;
+    border-radius: 12px;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+}
+
+.benefit-card:hover .icon-bg {
+    transform: scale(1);
+    background: var(--icon-color, #4f46e5);
+    opacity: 0.1;
+}
+
+.icon-emoji {
+    font-size: 1.8rem;
+    position: relative;
+    z-index: 2;
+}
+
+.benefit-content {
+    position: relative;
+    z-index: 2;
+}
+
+.benefit-title {
+    font-size: 1.4rem;
+    margin: 0 0 0.75rem;
+    color: #1f2937;
+    font-weight: 600;
+}
+
+.benefit-desc {
+    color: #4b5563;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.benefit-card:hover .benefit-desc {
+    color: #374151;
+}
+
+.hover-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--hover-color, #4f46e5) 0%, transparent 100%);
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+    border-radius: 12px;
+}
+
+.benefit-card:hover .hover-effect {
+    opacity: 0.04;
+}
+
+.cta-container {
+    margin-top: 4rem;
+    position: relative;
+    z-index: 2;
+}
+
+.cta-button {
+    background: linear-gradient(90deg, #8a2be2, #6a5acd);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(138, 43, 226, 0.3);
+}
+
+.why-robotics-section {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, #000000 0%, #000000 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.why-robotics-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 50% 70%, rgba(255, 76, 240, 0.1) 0%, transparent 30%),
+        radial-gradient(circle at 80% 70%, rgba(62, 167, 202, 0.1) 0%, transparent 30%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.why-robotics-matter-section {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, #000000 0%, #000000 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.why-robotics-matter-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 50% 70%, rgba(255, 76, 240, 0.1) 0%, transparent 30%),
+        radial-gradient(circle at 80% 70%, rgba(62, 167, 202, 0.1) 0%, transparent 30%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.robotics-impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+    z-index: 2;
+    position: relative;
+}
+
+.impact-card {
+    background: rgba(20, 20, 30, 0.8);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(111, 76, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: translateZ(0);
+}
+
+.impact-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(111, 76, 255, 0.1) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 1;
+}
+
+.impact-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(111, 76, 255, 0.25);
+    border-color: rgba(111, 76, 255, 0.4);
+}
+
+.impact-card:hover::before {
+    opacity: 1;
+}
+
+.impact-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(111, 76, 255, 0.15) 0%, rgba(0, 191, 255, 0.15) 100%);
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    border-radius: 20px;
+    background: radial-gradient(circle at 50% 0%, rgba(111, 76, 255, 0.1), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.impact-card:hover .card-glow {
+    opacity: 1;
+}
+
+.impact-card h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.impact-card p {
+    color: #b8c2d8;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    font-weight: 400;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.impact-card:nth-child(1) .impact-icon {
+    color: #6b4cff;
+    text-shadow: 0 0 20px rgba(107, 76, 255, 0.5);
+}
+
+.impact-card:nth-child(2) .impact-icon {
+    color: #00d1ff;
+    text-shadow: 0 0 20px rgba(0, 209, 255, 0.5);
+}
+
+.impact-card:nth-child(3) .impact-icon {
+    color: #00ff9d;
+    text-shadow: 0 0 20px rgba(0, 255, 157, 0.5);
+}
+
+.impact-card:nth-child(1):hover {
+    border-color: rgba(107, 76, 255, 0.3);
+}
+
+.impact-card:nth-child(2):hover {
+    border-color: rgba(0, 209, 255, 0.3);
+}
+
+.impact-card:nth-child(3):hover {
+    border-color: rgba(0, 255, 157, 0.3);
+}
+
+.robotics-mission {
+    max-width: 800px;
+    margin: 3rem auto 4rem;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.robotics-mission p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+    margin: 0;
+}
+
+.highlight-text {
+    color: #6b4cff;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+
+.sector-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+.sector-tag {
+    background: rgba(111, 76, 255, 0.1);
+    color: #b8a3ff;
+    padding: 0.6rem 1.4rem;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border: 1px solid rgba(111, 76, 255, 0.2);
+    transition: all 0.3s ease;
+    cursor: default;
+    backdrop-filter: blur(5px);
+}
+
+.sector-tag:hover {
+    background: rgba(111, 76, 255, 0.2);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.key-areas-section {
+    padding: 6rem 2rem;
+    background: #000000;
+    position: relative;
+    overflow: hidden;
+}
+
+.key-areas-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.key-areas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.area-card {
+    background: #1a1a1a;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid #333333;
+    margin: 10px;
+}
+
+.area-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.area-card:hover::before {
+    opacity: 1;
+}
+
+.area-icon {
+    margin: 0 0 1.5rem 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: white;
+    background: #333333;
+}
+
+.area-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: white;
+    font-weight: 600;
+}
+
+.area-description {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .key-areas-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .key-areas-section {
+        padding: 4rem 1.5rem;
+    }
+}
+
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #6a5acd, #8a2be2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.cta-button:hover::before {
+    opacity: 1;
+}
+
+.cta-button svg {
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover svg {
+    transform: translateX(5px);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .robotics-benefits {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .why-robotics-text {
+        font-size: 1.1rem;
+        padding: 1.5rem;
+    }
+    
+    .robotics-benefits {
+        grid-template-columns: 1fr;
+    }
+    
+    .benefit-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .overview-container {
+        flex-direction: column;
+        gap: 3rem;
+        text-align: center;
+    }
+    
+    .application-areas {
+        justify-content: center;
+    }
+    
+    .overview-image {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .overview-section {
+        padding: 3rem 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .application-tag {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.75rem;
+    }
+    
+    .overlay-content {
+        padding: 1.2rem;
+        margin: 0 -0.5rem;
+    }
+    
+    .future-visual {
+        height: 350px;
+    }
+}
